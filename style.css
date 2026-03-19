@@ -1,0 +1,130 @@
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+/* Section spacing */
+section {
+    padding: 80px 0;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Home Section */
+#home {
+    background: #0f172a;
+    color: white;
+}
+
+#home h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+#home .lead {
+    color: #94a3b8;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #2563eb;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.btn-outline-primary {
+    border: 1px solid #2563eb;
+    color: #2563eb;
+}
+
+.btn-outline-primary:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* Skills Section */
+#skills {
+    background: #f8fafc;
+}
+
+/* Skills Row */
+#skills .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* responsive */
+}
+
+/* Skill Box */
+.skill-box {
+    flex: 0 0 180px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Mobile: 2 per row */
+@media (max-width: 768px) {
+    .skill-box {
+        flex: 0 0 45%;
+    }
+}
+
+/* Mobile small: 1 per row */
+@media (max-width: 480px) {
+    .skill-box {
+        flex: 0 0 100%;
+    }
+}
+
+/* Projects Section */
+.card {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #2563eb;
+}
+
+/* Contact Section */
+#contact {
+    background: #0f172a;
+    color: white;
+}
+
+#contact a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile overall */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2rem;
+    }
+}
